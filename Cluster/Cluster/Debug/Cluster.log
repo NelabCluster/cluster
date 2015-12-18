@@ -1,0 +1,54 @@
+﻿生成启动时间为 2015/12/14 14:31:32。
+     1>项目“E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Cluster\Cluster.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Cluster.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Cluster.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Cluster.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AlgorithmParameters.cpp Atom.cpp BHBaseAlgorithm.cpp BHBaseClusters.cpp BHBaseParameters.cpp Cluster.cpp Clusters.cpp FSPotentialEnergy.cpp GuptaPotentialEnergy.cpp LJPotentialEnergy.cpp PotentialEnergy.cpp
+         PotentialEnergy.cpp
+         LJPotentialEnergy.cpp
+         GuptaPotentialEnergy.cpp
+         FSPotentialEnergy.cpp
+         Clusters.cpp
+         Cluster.cpp
+         BHBaseParameters.cpp
+         BHBaseClusters.cpp
+         BHBaseAlgorithm.cpp
+         Atom.cpp
+         AlgorithmParameters.cpp
+         正在生成代码...
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Cluster.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster.lib" /MACHINE:X86 Debug\Cluster.res
+         Debug\Cluster.exe.embed.manifest.res
+         Debug\AlgorithmParameters.obj
+         Debug\Atom.obj
+         Debug\BHBaseAlgorithm.obj
+         Debug\BHBaseClusters.obj
+         Debug\BHBaseParameters.obj
+         Debug\Cluster.obj
+         Debug\Clusters.obj
+         Debug\FSPotentialEnergy.obj
+         Debug\GuptaPotentialEnergy.obj
+         Debug\LJPotentialEnergy.obj
+         Debug\PotentialEnergy.obj
+         Debug\stdafx.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Cluster.exe.embed.manifest" /manifest Debug\Cluster.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         Cluster.vcxproj -> E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Cluster.unsuccessfulbuild”。
+         正在对“Debug\Cluster.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Cluster\Cluster.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.78

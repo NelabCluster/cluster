@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BH">
+      <UniqueIdentifier>{94d82081-b490-49b4-8420-8f3a8dab3976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GA">
+      <UniqueIdentifier>{5b78d15b-aa03-496b-b183-aee7bcb37249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{5e11eaf9-92d4-41bf-a6e9-4dd845e9551e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Atom">
+      <UniqueIdentifier>{ee854984-57fc-4ee9-a803-9de801869cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\PotentialEnergy">
+      <UniqueIdentifier>{5d81ef69-b06a-4421-b2fb-ef4f4cd75929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Cluster">
+      <UniqueIdentifier>{12d214bb-ca99-4006-845b-ca2eb5b391f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Algorithm">
+      <UniqueIdentifier>{b43e05ba-6bf4-4a6a-ad2c-cfb50f0519fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{45400e76-7cc4-42b9-9df2-9ab0c3d7a457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\LocalTool">
+      <UniqueIdentifier>{f593b485-2d3c-4d26-aa1c-1c836750ef7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BHBaseAlgorithm.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="PotentialEnergy.h">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClInclude>
+    <ClInclude Include="LJPotentialEnergy.h">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClInclude>
+    <ClInclude Include="FSPotentialEnergy.h">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClInclude>
+    <ClInclude Include="GuptaPotentialEnergy.h">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClInclude>
+    <ClInclude Include="Clusters.h">
+      <Filter>Common\Cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="Manage\IAlgorithmManage.h">
+      <Filter>Common\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="IAlgorithm.h">
+      <Filter>Common\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="BHBaseClusters.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="AlgorithmParameters.h">
+      <Filter>Common\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="BHBaseParameters.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="Atom.h">
+      <Filter>Common\Atom</Filter>
+    </ClInclude>
+    <ClInclude Include="BHBase.h">
+      <Filter>BH</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalTool.h">
+      <Filter>Tool\LocalTool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BHBaseAlgorithm.cpp">
+      <Filter>BH</Filter>
+    </ClCompile>
+    <ClCompile Include="PotentialEnergy.cpp">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClCompile>
+    <ClCompile Include="LJPotentialEnergy.cpp">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClCompile>
+    <ClCompile Include="FSPotentialEnergy.cpp">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClCompile>
+    <ClCompile Include="GuptaPotentialEnergy.cpp">
+      <Filter>Common\PotentialEnergy</Filter>
+    </ClCompile>
+    <ClCompile Include="Clusters.cpp">
+      <Filter>Common\Cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BHBaseClusters.cpp">
+      <Filter>BH</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmParameters.cpp">
+      <Filter>Common\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="BHBaseParameters.cpp">
+      <Filter>BH</Filter>
+    </ClCompile>
+    <ClCompile Include="Atom.cpp">
+      <Filter>Common\Atom</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalTool.cpp">
+      <Filter>Tool\LocalTool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Cluster.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
