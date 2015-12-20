@@ -2,11 +2,12 @@
 #include "BHBaseAlgorithm.h"
 
 
-BHBaseAlgorithm::BHBaseAlgorithm(BHBaseParameters& para):_parameters(para)
+BHBaseAlgorithm::BHBaseAlgorithm(BHBaseParameters& para)
+	:_parameters(para)
 {
-	this->_clusterAfterChange = new BHBaseClusters(para.N);
-	this->_clusterBeforeChange = new BHBaseClusters(para.N);
-	this->_bestCluster = new BHBaseClusters(para.N);
+	this->_clusterAfterChange = new BHBaseClusters(para._N);
+	this->_clusterBeforeChange = new BHBaseClusters(para._N);
+	this->_bestCluster = new BHBaseClusters(para._N);
 }
 
 BHBaseAlgorithm::~BHBaseAlgorithm(void)
@@ -28,7 +29,7 @@ void BHBaseAlgorithm::Process()
 
 	this->EvaulateCluster();
 
-	double dE = this->_clusterAfterChange->energy - this->_clusterBeforeChange->energy;
+	double dE = this->_clusterAfterChange->GetEnergy() - this->_clusterBeforeChange->GetEnergy();
 
 	if (dE <= 0 || RANDI < exp(-dE / this->_parameters._T))
 	{

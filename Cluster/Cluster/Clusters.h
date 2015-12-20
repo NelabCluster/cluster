@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
 #include "Atom.h"
+enum PE_TYPE;
 
 class Clusters
 {
@@ -13,6 +13,10 @@ public:
 
 	int GetAtomsNumber();
 	double* GetDistancePointer();
+	double GetEnergy(PE_TYPE type);
+	double GetEnergy();
+//	Atom& GetAttomAtIndex(int index);
+	
 
 protected:
 	int _N;						//原子总数
@@ -22,6 +26,7 @@ protected:
 //	vector<int> _note;			//0：表示第一种类型，1：表示第二种类型，以此类推
 
 	double *_R;					//距离矩阵
+	double _E;					//势能值
 
 	void InitHandles();
 };

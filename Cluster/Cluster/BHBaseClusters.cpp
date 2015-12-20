@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include "BHBaseClusters.h"
-
+#include "Atom.h"
 
 BHBaseClusters::BHBaseClusters(int N):Clusters(N)
 {

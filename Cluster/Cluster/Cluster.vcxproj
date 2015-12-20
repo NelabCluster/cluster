@@ -78,12 +78,21 @@
   <ItemGroup>
     <ClInclude Include="AlgorithmParameters.h" />
     <ClInclude Include="Atom.h" />
+    <ClInclude Include="BaseTool.h" />
     <ClInclude Include="BHBase.h" />
     <ClInclude Include="BHBaseClusters.h" />
     <ClInclude Include="BHBaseParameters.h" />
     <ClInclude Include="Clusters.h" />
     <ClInclude Include="Common.h" />
+    <ClInclude Include="DEBase.h" />
+    <ClInclude Include="DEBaseAlgorithm.h" />
+    <ClInclude Include="DEBaseClusters.h" />
+    <ClInclude Include="DEBaseParameters.h" />
     <ClInclude Include="FSPotentialEnergy.h" />
+    <ClInclude Include="GABase.h" />
+    <ClInclude Include="GABaseAlgorithm.h" />
+    <ClInclude Include="GABaseClusters.h" />
+    <ClInclude Include="GABaseParameters.h" />
     <ClInclude Include="GuptaPotentialEnergy.h" />
     <ClInclude Include="IAlgorithm.h" />
     <ClInclude Include="BHBaseAlgorithm.h" />
@@ -94,16 +103,24 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlgorithmParameters.cpp" />
     <ClCompile Include="Atom.cpp" />
+    <ClCompile Include="BaseTool.cpp" />
     <ClCompile Include="BHBaseAlgorithm.cpp" />
     <ClCompile Include="BHBaseClusters.cpp" />
     <ClCompile Include="BHBaseParameters.cpp" />
     <ClCompile Include="Cluster.cpp" />
     <ClCompile Include="Clusters.cpp" />
+    <ClCompile Include="DEBaseAlgorithm.cpp" />
+    <ClCompile Include="DEBaseClusters.cpp" />
+    <ClCompile Include="DEBaseParameters.cpp" />
     <ClCompile Include="FSPotentialEnergy.cpp" />
+    <ClCompile Include="GABaseAlgorithm.cpp" />
+    <ClCompile Include="GABaseClusters.cpp" />
+    <ClCompile Include="GABaseParameters.cpp" />
     <ClCompile Include="GuptaPotentialEnergy.cpp" />
     <ClCompile Include="LJPotentialEnergy.cpp" />
     <ClCompile Include="LocalTool.cpp" />

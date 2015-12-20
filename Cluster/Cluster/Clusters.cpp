@@ -1,5 +1,6 @@
 #include "StdAfx.h"
 #include "Clusters.h"
+#include "PotentialEnergy.h"
 
 Clusters::Clusters(int N)
 	:_N(N)
@@ -31,7 +32,7 @@ Clusters::Clusters(int N, vector<ATOM_TYPE> types, vector<int> numbers)
 
 void Clusters::InitHandles()
 {
-	for (int i = 0; i < N; i ++)
+	for (int i = 0; i < _N; i ++)
 	{
 		_atoms.push_back(Atom());
 	}
@@ -39,15 +40,27 @@ void Clusters::InitHandles()
 
 Clusters::~Clusters(void)
 {
-	free(_R)
+//	free(_R);
 }
 
 int Clusters::GetAtomsNumber()
 {
-	return this->_N;
+	return _N;
 }
 
 double* Clusters::GetDistancePointer()
 {
-	return this->_R;
+	return _R;
+}
+
+double Clusters::GetEnergy(PE_TYPE type)
+{
+	PotentialEnergy pe = PotentialEnergy::PEWithType(type);
+	pe.EnergyValue(*this);
+	return _E;
+}
+
+double Clusters::GetEnergy()
+{
+	return _E;
 }

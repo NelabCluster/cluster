@@ -5,20 +5,21 @@
 AlgorithmParameters::AlgorithmParameters(int N,PE_TYPE pe,ATOM_TYPE atom1,ATOM_TYPE atom2,int atom1N)
 {
 	
-	this->N = N;
-//	this->PE = PotentialEnergy::PEWithType(pe);
+	_N = N;
 
-	if ( NULL != atom1 ) this->atomTypes.push_back(atom1);
+	_energyType = pe;
 
-	if ( NULL != atom2 ) this->atomTypes.push_back(atom2);
+	if ( NULL != atom1 ) _atomTypes.push_back(atom1);
 
-	this->atomNumber.push_back(atom1N);
+	if ( NULL != atom2 ) _atomTypes.push_back(atom2);
 
-	this->atomNumber.push_back(N-atom1N);
+	_atomNumber.push_back(atom1N);
+
+	_atomNumber.push_back(N-atom1N);
 }
 
 
 AlgorithmParameters::~AlgorithmParameters(void)
 {
-	delete this->PE;
+
 }

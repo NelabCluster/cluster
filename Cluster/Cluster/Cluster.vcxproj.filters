@@ -40,6 +40,9 @@
     <Filter Include="Tool\LocalTool">
       <UniqueIdentifier>{f593b485-2d3c-4d26-aa1c-1c836750ef7d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DE">
+      <UniqueIdentifier>{a2b2eddf-ba10-497e-878a-9856579d0d9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -99,6 +102,36 @@
     <ClInclude Include="Common.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="DEBaseAlgorithm.h">
+      <Filter>DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DEBaseClusters.h">
+      <Filter>DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DEBaseParameters.h">
+      <Filter>DE</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTool.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="DEBase.h">
+      <Filter>DE</Filter>
+    </ClInclude>
+    <ClInclude Include="GABaseParameters.h">
+      <Filter>GA</Filter>
+    </ClInclude>
+    <ClInclude Include="GABaseClusters.h">
+      <Filter>GA</Filter>
+    </ClInclude>
+    <ClInclude Include="GABaseAlgorithm.h">
+      <Filter>GA</Filter>
+    </ClInclude>
+    <ClInclude Include="GABase.h">
+      <Filter>GA</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -139,6 +172,27 @@
     </ClCompile>
     <ClCompile Include="Cluster.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DEBaseAlgorithm.cpp">
+      <Filter>DE</Filter>
+    </ClCompile>
+    <ClCompile Include="DEBaseClusters.cpp">
+      <Filter>DE</Filter>
+    </ClCompile>
+    <ClCompile Include="DEBaseParameters.cpp">
+      <Filter>DE</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTool.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="GABaseParameters.cpp">
+      <Filter>GA</Filter>
+    </ClCompile>
+    <ClCompile Include="GABaseAlgorithm.cpp">
+      <Filter>GA</Filter>
+    </ClCompile>
+    <ClCompile Include="GABaseClusters.cpp">
+      <Filter>GA</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

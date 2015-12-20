@@ -18,4 +18,9 @@ public:
 	double _y;
 	double _z;
 	int _note;
+
+	void SetCood(int x,int y, int z);
+	vector<double> GetCood();
+	void SetNote(int note);
+	int GetNote();
 };

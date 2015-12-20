@@ -1,13 +1,13 @@
-﻿生成启动时间为 2015/12/19 22:52:20。
+﻿生成启动时间为 2015/12/20 23:21:38。
      1>项目“E:\学校\程序\GitHub\cluster\Cluster\Cluster\Cluster.vcxproj”在节点 2 上(rebuild 个目标)。
      1>_PrepareForClean:
          正在删除文件“Debug\Cluster.lastbuildstate”。
        InitializeBuildStatus:
-         正在对“Debug\Cluster.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\Cluster.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\程序\GitHub\cluster\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Cluster.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
          stdafx.cpp
-         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\程序\GitHub\cluster\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Cluster.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AlgorithmParameters.cpp Atom.cpp BHBaseAlgorithm.cpp BHBaseClusters.cpp BHBaseParameters.cpp Cluster.cpp Clusters.cpp FSPotentialEnergy.cpp GuptaPotentialEnergy.cpp LJPotentialEnergy.cpp LocalTool.cpp PotentialEnergy.cpp
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\程序\GitHub\cluster\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Cluster.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AlgorithmParameters.cpp Atom.cpp BaseTool.cpp BHBaseAlgorithm.cpp BHBaseClusters.cpp BHBaseParameters.cpp Cluster.cpp Clusters.cpp DEBaseAlgorithm.cpp DEBaseClusters.cpp DEBaseParameters.cpp FSPotentialEnergy.cpp GuptaPotentialEnergy.cpp LJPotentialEnergy.cpp LocalTool.cpp PotentialEnergy.cpp
          PotentialEnergy.cpp
      1>e:\学校\程序\github\cluster\cluster\cluster\potentialenergy.cpp(12): warning C4172: 返回局部变量或临时变量的地址
      1>e:\学校\程序\github\cluster\cluster\cluster\potentialenergy.cpp(14): warning C4172: 返回局部变量或临时变量的地址
@@ -23,11 +23,15 @@
          FSPotentialEnergy.cpp
      1>e:\学校\程序\github\cluster\cluster\cluster\fspotentialenergy.cpp(26): warning C4172: 返回局部变量或临时变量的地址
      1>e:\学校\程序\github\cluster\cluster\cluster\fspotentialenergy.cpp(31): warning C4172: 返回局部变量或临时变量的地址
+         DEBaseParameters.cpp
+         DEBaseClusters.cpp
+         DEBaseAlgorithm.cpp
          Clusters.cpp
          Cluster.cpp
          BHBaseParameters.cpp
          BHBaseClusters.cpp
          BHBaseAlgorithm.cpp
+         BaseTool.cpp
          Atom.cpp
          AlgorithmParameters.cpp
          正在生成代码...
@@ -40,11 +44,15 @@
          Debug\Cluster.exe.embed.manifest.res
          Debug\AlgorithmParameters.obj
          Debug\Atom.obj
+         Debug\BaseTool.obj
          Debug\BHBaseAlgorithm.obj
          Debug\BHBaseClusters.obj
          Debug\BHBaseParameters.obj
          Debug\Cluster.obj
          Debug\Clusters.obj
+         Debug\DEBaseAlgorithm.obj
+         Debug\DEBaseClusters.obj
+         Debug\DEBaseParameters.obj
          Debug\FSPotentialEnergy.obj
          Debug\GuptaPotentialEnergy.obj
          Debug\LJPotentialEnergy.obj
@@ -60,11 +68,15 @@
          Debug\Cluster.exe.embed.manifest.res
          Debug\AlgorithmParameters.obj
          Debug\Atom.obj
+         Debug\BaseTool.obj
          Debug\BHBaseAlgorithm.obj
          Debug\BHBaseClusters.obj
          Debug\BHBaseParameters.obj
          Debug\Cluster.obj
          Debug\Clusters.obj
+         Debug\DEBaseAlgorithm.obj
+         Debug\DEBaseClusters.obj
+         Debug\DEBaseParameters.obj
          Debug\FSPotentialEnergy.obj
          Debug\GuptaPotentialEnergy.obj
          Debug\LJPotentialEnergy.obj
@@ -79,4 +91,4 @@
 
 生成成功。
 
-已用时间 00:00:04.83
+已用时间 00:00:04.46

@@ -15,6 +15,7 @@
 #include <math.h>
 #include <vector>
 #include <list>
+#include <iostream>
 
 using namespace std;
 
