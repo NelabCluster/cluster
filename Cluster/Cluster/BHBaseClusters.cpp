@@ -13,12 +13,12 @@ BHBaseClusters::~BHBaseClusters(void)
 
 void BHBaseClusters::RandInCubic(double length)
 {
-	for ( int i = 0; i < N; i++ )
+	for ( int i = 0; i < _N; i++ )
 	{		
-		Atom& atom = this->atoms[i];
-		atom.x = (RANDI-0.5) * length;
-		atom.y = (RANDI-0.5) * length;
-		atom.z = (RANDI-0.5) * length;
+		Atom& atom = this->_atoms[i];
+		atom._x = (RANDI-0.5) * length;
+		atom._y = (RANDI-0.5) * length;
+		atom._z = (RANDI-0.5) * length;
 	}
 }
 

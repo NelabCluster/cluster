@@ -6,7 +6,7 @@
 class BHBaseAlgorithm : IAlgorithm
 {
 public:
-	BHBaseAlgorithm(BHBaseParameters para);
+	BHBaseAlgorithm(BHBaseParameters& para);
 	~BHBaseAlgorithm(void);
 
 	void Initialization(void);
@@ -14,12 +14,12 @@ public:
 	bool EndCondition(void);
 
 private:
-	BHBaseClusters *clusterBeforeChange;
-	BHBaseClusters *clusterAfterChange;
-	BHBaseClusters *bestCluster;
-	BHBaseParameters *parameters;
-	int nowMCS;
-	double nowAcceptRatio;
+	BHBaseClusters *_clusterBeforeChange;
+	BHBaseClusters *_clusterAfterChange;
+	BHBaseClusters *_bestCluster;
+	BHBaseParameters& _parameters;
+	double _nowAcceptRatio;
+	int _nowMCS;
 
 	void Displace();
 	double EvaulateCluster();

@@ -7,6 +7,9 @@ public:
 	LJPotentialEnergy(void);
 	~LJPotentialEnergy(void);
 
-	 double energyValue(double dis[],int N);
+	 double EnergyValue(Clusters& cluster);
+
+	 double ForceValue(Clusters& clusters);
+
 };
 

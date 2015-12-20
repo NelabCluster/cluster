@@ -11,8 +11,10 @@ LJPotentialEnergy::~LJPotentialEnergy(void)
 {
 }
 
-double LJPotentialEnergy::energyValue(double dis[],int N)
+double LJPotentialEnergy::EnergyValue(Clusters& cluster)
 {
+	int N = cluster.GetAtomsNumber();
+	double *dis = cluster.GetDistancePointer();
 	double E = 0;
 	for (int i = 0; i < N - 1; i ++)
 	{
@@ -24,4 +26,9 @@ double LJPotentialEnergy::energyValue(double dis[],int N)
 	}
 	E = 4 * E;
 	return E;
+}
+
+double LJPotentialEnergy::ForceValue(Clusters& clusters)
+{
+	return 0;
 }

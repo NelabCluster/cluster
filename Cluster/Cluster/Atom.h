@@ -1,5 +1,5 @@
 #pragma once;
-enum Atom_Type
+enum ATOM_TYPE
 {
 	ATOM_None,
 	ATOM_Fe = 1,
@@ -14,8 +14,8 @@ enum Atom_Type
 class Atom
 {
 public:
-	double x;
-	double y;
-	double z;
-	int note;
+	double _x;
+	double _y;
+	double _z;
+	int _note;
 };

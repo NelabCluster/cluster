@@ -2,47 +2,44 @@
 #include "BHBaseAlgorithm.h"
 
 
-BHBaseAlgorithm::BHBaseAlgorithm(BHBaseParameters para)
+BHBaseAlgorithm::BHBaseAlgorithm(BHBaseParameters& para):_parameters(para)
 {
-	this->parameters = new BHBaseParameters(para);
-	this->clusterAfterChange = new BHBaseClusters(para.N);
-	this->clusterBeforeChange = new BHBaseClusters(para.N);
-	this->bestCluster = new BHBaseClusters(para.N);
+	this->_clusterAfterChange = new BHBaseClusters(para.N);
+	this->_clusterBeforeChange = new BHBaseClusters(para.N);
+	this->_bestCluster = new BHBaseClusters(para.N);
 }
 
 BHBaseAlgorithm::~BHBaseAlgorithm(void)
 {
-	delete(this->parameters);
-	delete(this->clusterBeforeChange);
-	delete(this->clusterAfterChange);
-	delete(this->bestCluster);
+	delete(this->_clusterBeforeChange);
+	delete(this->_clusterAfterChange);
+	delete(this->_bestCluster);
 }
 
 void BHBaseAlgorithm::Initialization()
 {
-	this->clusterBeforeChange->RandInCubic(5.5);
+	this->_clusterBeforeChange->RandInCubic(5.5);
 }
 
 void BHBaseAlgorithm::Process()
 {
-	nowMCS ++;
+	_nowMCS ++;
 	this->Displace();
 
-	this->Displace();
 	this->EvaulateCluster();
 
-	double dE = this->clusterAfterChange->energy - this->clusterBeforeChange->energy;
+	double dE = this->_clusterAfterChange->energy - this->_clusterBeforeChange->energy;
 
-	if (dE <= 0 || RANDI < exp(-dE/this->parameters->T))
+	if (dE <= 0 || RANDI < exp(-dE / this->_parameters._T))
 	{
-		this->clusterBeforeChange = this->clusterAfterChange;
+		this->_clusterBeforeChange = this->_clusterAfterChange;
 	} 
 
 }
 
 bool BHBaseAlgorithm::EndCondition()
 {
-	if ( nowMCS >= parameters->MCS ) return true;
+	if ( _nowMCS >= _parameters._MCS ) return true;
 
 	return false;
 }
@@ -55,5 +52,6 @@ void BHBaseAlgorithm::Displace()
 
 double BHBaseAlgorithm::EvaulateCluster()
 {
+
 	return 0;
 }

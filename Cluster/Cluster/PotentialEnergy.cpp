@@ -4,26 +4,27 @@
 #include "GuptaPotentialEnergy.h"
 #include "FSPotentialEnergy.h"
 
-PotentialEnergy* PotentialEnergy::PEWithType(PE_TYPE type)
+PotentialEnergy& PotentialEnergy::PEWithType(PE_TYPE type)
 {
 	switch(type)
 	{
 	case PE_LJ:
-		return new LJPotentialEnergy();
+		return LJPotentialEnergy();
 	case PE_Gupta:
-		return new GuptaPotentialEnergy();
+		return GuptaPotentialEnergy();
 	case PE_FS:
-		return new FSPotentialEnergy();
+		return FSPotentialEnergy();
 	}
-	return nullptr;
+	return PotentialEnergy();
 }
+PotentialEnergy::~PotentialEnergy(){ }
 
-double PotentialEnergy::energyValue(Clusters& cluster){ return 0; }
-double PotentialEnergy::energyValue(double dis[],int N){ return 0; }
-double PotentialEnergy::energyValue(Atom_Type atom1,double dis[],int N){ return 0; }
-double PotentialEnergy::energyValue(Atom_Type atom1,Atom_Type atom2,double dis[],int note[],int N){ return 0; }
-double PotentialEnergy::energyValue(Atom_Type atoms[],int atomsNumber,double dis[],int note[],int N){ return 0; }
+double PotentialEnergy::EnergyValue(Clusters& cluster){ return 0; }
 
-double PotentialEnergy::atomEnergyAtIndex(int index){ return 0; }
-PE_AtomParamter PotentialEnergy::returnAtomParameter(Atom_Type atom){ return PE_AtomParamter(); }
-PE_AtomParamter PotentialEnergy::returnAtomParameter(Atom_Type atom1,Atom_Type atom2){ return PE_AtomParamter(); }
+double PotentialEnergy::ForceValue(Clusters& cluster){ return 0; }
+
+//double PotentialEnergy::atomEnergyAtIndex(int index){ return 0; }
+
+PE_AtomParamter& PotentialEnergy::ReturnAtomParameter(ATOM_TYPE atom){ return PE_AtomParamter(); }
+
+PE_AtomParamter& PotentialEnergy::ReturnAtomParameter(ATOM_TYPE atom1,ATOM_TYPE atom2){ return PE_AtomParamter(); }

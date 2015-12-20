@@ -96,6 +96,9 @@
     <ClInclude Include="LocalTool.h">
       <Filter>Tool\LocalTool</Filter>
     </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -119,9 +122,6 @@
     <ClCompile Include="Clusters.cpp">
       <Filter>Common\Cluster</Filter>
     </ClCompile>
-    <ClCompile Include="Cluster.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="BHBaseClusters.cpp">
       <Filter>BH</Filter>
     </ClCompile>
@@ -136,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="LocalTool.cpp">
       <Filter>Tool\LocalTool</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

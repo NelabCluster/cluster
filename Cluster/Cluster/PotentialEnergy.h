@@ -13,16 +13,18 @@ struct PE_AtomParamter{ };
 class PotentialEnergy
 {
 public:
-	static PotentialEnergy* PEWithType(PE_TYPE type);
+	static PotentialEnergy& PEWithType(PE_TYPE type);
+
+	virtual ~PotentialEnergy();
 	
-	virtual double energyValue(Clusters& cluster);
-	virtual double energyValue(double dis[],int N);
-	virtual double energyValue(Atom_Type atom1,double dis[],int N);
-	virtual double energyValue(Atom_Type atom1,Atom_Type atom2,double dis[],int note[],int N);
-	virtual double energyValue(Atom_Type atoms[],int atomsNumber,double dis[],int note[],int N);
-	virtual double atomEnergyAtIndex(int index);
+	virtual double EnergyValue(Clusters& cluster);
+
+	virtual double ForceValue(Clusters& cluster);
+
+//	virtual double atomEnergyAtIndex(int index);
+
 
 private:
-	virtual PE_AtomParamter returnAtomParameter(Atom_Type atom);
-	virtual PE_AtomParamter returnAtomParameter(Atom_Type atom1,Atom_Type atom2);
+	virtual PE_AtomParamter& ReturnAtomParameter(ATOM_TYPE atom);
+	virtual PE_AtomParamter& ReturnAtomParameter(ATOM_TYPE atom1,ATOM_TYPE atom2);
 };

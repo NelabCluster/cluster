@@ -2,11 +2,11 @@
 #include "AlgorithmParameters.h"
 
 
-AlgorithmParameters::AlgorithmParameters(int N,PE_TYPE pe,Atom_Type atom1,Atom_Type atom2,int atom1N)
+AlgorithmParameters::AlgorithmParameters(int N,PE_TYPE pe,ATOM_TYPE atom1,ATOM_TYPE atom2,int atom1N)
 {
 	
 	this->N = N;
-	this->PE = PotentialEnergy::PEWithType(pe);
+//	this->PE = PotentialEnergy::PEWithType(pe);
 
 	if ( NULL != atom1 ) this->atomTypes.push_back(atom1);
 

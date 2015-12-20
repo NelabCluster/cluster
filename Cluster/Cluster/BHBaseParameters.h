@@ -7,19 +7,19 @@ struct BHBaseParameters :
 {
 public:
 	
-	double T;//温度;
 
-	double minStep;//最小步长
+	double _T;//温度;
+	double _minStep;//最小步长
 
-	double maxStep;//最长步长
+	double _maxStep;//最长步长
 
-	double acceptRatio;//接受概率
+	double _acceptRatio;//接受概率
 
-	int MCS;//蒙特卡洛次数
+	int _MCS;//蒙特卡洛次数
 
-	static BHBaseParameters defaultParameters(int N, PE_TYPE pe, Atom_Type atom1, Atom_Type atom2, int atom1N);
+	static BHBaseParameters defaultParameters(int N, PE_TYPE pe, ATOM_TYPE atom1, ATOM_TYPE atom2, int atom1N);
 
-	BHBaseParameters(int N, PE_TYPE pe, Atom_Type atom1, Atom_Type atom2, int atom1N);
+	BHBaseParameters(int N, PE_TYPE pe, ATOM_TYPE atom1, ATOM_TYPE atom2, int atom1N);
 
 };
 

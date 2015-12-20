@@ -1,18 +1,20 @@
-﻿生成启动时间为 2015/12/14 14:26:21。
-     1>项目“E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\lib\lib.vcxproj”在节点 2 上(build 个目标)。
-     1>InitializeBuildStatus:
+﻿生成启动时间为 2015/12/18 11:56:34。
+     1>项目“E:\学校\程序\GitHub\cluster\Cluster\lib\lib.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\lib.lastbuildstate”。
+       InitializeBuildStatus:
          正在创建“Debug\lib.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt lbfgs.c
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\学校\程序\GitHub\cluster\Cluster\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt lbfgs.c
          lbfgs.c
        Lib:
-         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster_debug.lib" /NOLOGO Debug\lbfgs.obj
-         lib.vcxproj -> E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\Debug\Cluster_debug.lib
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\学校\程序\GitHub\cluster\Cluster\Debug\Cluster_debug.lib" /NOLOGO Debug\lbfgs.obj
+         lib.vcxproj -> E:\学校\程序\GitHub\cluster\Cluster\Debug\Cluster_debug.lib
        FinalizeBuildStatus:
          正在删除文件“Debug\lib.unsuccessfulbuild”。
          正在对“Debug\lib.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“E:\学校\郑骥文\毕业设计\程序\Cluster20151109\Cluster\lib\lib.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“E:\学校\程序\GitHub\cluster\Cluster\lib\lib.vcxproj”(rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:03.02
+已用时间 00:00:03.38

@@ -3,7 +3,7 @@
 class AlgorithmParameters
 {
 public:
-	AlgorithmParameters(int N, PE_TYPE pe, Atom_Type atom1, Atom_Type atom2,int atom1N);
+	AlgorithmParameters(int N, PE_TYPE pe, ATOM_TYPE atom1, ATOM_TYPE atom2,int atom1N);
 	~AlgorithmParameters(void);
 
 	int N;//总原子数
@@ -12,6 +12,6 @@ public:
 
 	vector<int> atomNumber;
 
-	vector<Atom_Type> atomTypes;//原子类型
+	vector<ATOM_TYPE> atomTypes;//原子类型
 };
 

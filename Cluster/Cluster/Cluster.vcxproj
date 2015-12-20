@@ -82,6 +82,7 @@
     <ClInclude Include="BHBaseClusters.h" />
     <ClInclude Include="BHBaseParameters.h" />
     <ClInclude Include="Clusters.h" />
+    <ClInclude Include="Common.h" />
     <ClInclude Include="FSPotentialEnergy.h" />
     <ClInclude Include="GuptaPotentialEnergy.h" />
     <ClInclude Include="IAlgorithm.h" />

@@ -22,9 +22,10 @@ public:
 	FSPotentialEnergy(void);
 	~FSPotentialEnergy(void);
 	
-	//double energyValue(ATOM atom,double dis[],int N);
-
+	double EnergyValue(Clusters& cluster);
+	double ForceValue(Clusters& cluster);
 private:
-	//PE_AtomParamter returnAtomParameter(ATOM atom);
+	PE_AtomParamter& ReturnAtomParameter(ATOM_TYPE atom);
+	PE_AtomParamter& ReturnAtomParameter(ATOM_TYPE atom1,ATOM_TYPE atom2);
 };
 

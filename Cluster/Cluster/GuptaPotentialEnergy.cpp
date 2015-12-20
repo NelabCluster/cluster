@@ -13,39 +13,36 @@ GuptaPotentialEnergy::~GuptaPotentialEnergy(void)
 }
 
 
-double GuptaPotentialEnergy::energyValue(Atom_Type atom,double dis[],int N)
+double GuptaPotentialEnergy::EnergyValue(Clusters& cluster)
 {
-	double E = 0;
-	for (int i = 0; i < N - 1; i ++)
-	{
-		for (int j = 0; j < N; j ++)
-		{
-			
-		}
-	}
-
-	return E;
+	return 0;
 }
 
-PE_AtomParamter GuptaPotentialEnergy::returnAtomParameter(Atom_Type atom){ 
+double GuptaPotentialEnergy::ForceValue(Clusters& cluster)
+{
+	return 0;
+}
+
+PE_AtomParamter& GuptaPotentialEnergy::ReturnAtomParameter(ATOM_TYPE atom){ 
+	
 	switch (atom)
 	{
 	case ATOM_Fe:
-		return Gupta_AtomParamter(2.553,0.13315,1.6179,10.5,2.6);
+		return GuptaFe;
 		break;
 	case ATOM_Pt:
-		return Gupta_AtomParamter(2.7746,0.2975,2.695,10.612,4.004);
+		return GuptaPt;
 		break;
 	}
 
 	return Gupta_AtomParamter(0,0,0,0,0);
 }
 
-PE_AtomParamter GuptaPotentialEnergy::returnAtomParameter(Atom_Type atom1,Atom_Type atom2)
+PE_AtomParamter& GuptaPotentialEnergy::ReturnAtomParameter(ATOM_TYPE atom1,ATOM_TYPE atom2)
 {
 	if ( (atom1 == ATOM_Fe && atom2 == ATOM_Pt) || (atom1 == ATOM_Pt && atom2 == ATOM_Fe))
 	{
-		return Gupta_AtomParamter(2.6638,0.19903,2.0881,10.556,3.302);
+		return GuptaFePt;
 	}
 
 	return Gupta_AtomParamter(0,0,0,0,0);
